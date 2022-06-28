@@ -1,6 +1,15 @@
 /* ########################################### */
 /*                 Global                      */
 /* ########################################### */
+
+:root {
+    --primary-color: #eb7100;
+    --secondary-color: #00799e;
+    --background: white;
+    --default-text-color: black;
+}
+
+
 *{
     box-sizing: border-box;
 }
@@ -8,12 +17,12 @@
 html{
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    background-color:white;
-    color: black;
+    background-color: var(--background);
+    color: var(--default-text-color);
 }
 
 a{
-    color:#FF0042;
+    color: var(--secondary-color);
     font-weight: bolder;
     text-decoration: none;
 }
@@ -37,7 +46,7 @@ h1{
 }
 
 .subforum-title{
-    background-color:#292B2E;
+    background-color: var(--primary-color);
     padding: 5px;
     border-radius: 5px;
     margin:4px;
@@ -52,7 +61,7 @@ h1{
     padding: 10px;
     margin:4px;
     border-radius: 5px;
-    background-color:#111314;
+    background-color: var(--primary-color);
 }
 
 .subforum-description *{
@@ -221,12 +230,12 @@ header{
 
   /* Search Box styles */
 .search-box{
-    border: solid 1px #52057b;
+    border: solid 1px var(--primary-color);
     margin-top: 20px;
     padding: 40px;
     display:flex;
     justify-content: center;
-    box-shadow:1px 2px 3px #52057b;
+    box-shadow:1px 2px 3px var(--primary-color);
 }
 
 .search-box select{
@@ -244,7 +253,7 @@ header{
 }
 
 .search-box button:hover{
-    background-color: #000000;
+    background-color: var(--primary-color);
     color: #fff;
     box-shadow: 1px 2px 3px #fff;
 }
@@ -261,7 +270,7 @@ header{
 /* forum info Styling */
 .forum-info{
     padding: 20px;
-    background-color: #111314;
+    background-color: var(--primary-color);
 }
 
 .chart{
@@ -273,7 +282,7 @@ header{
 footer{
     margin-top: 20px;
     padding: 20px;
-    background-color:  #52057b;
+    background-color:  var(--primary-color);
     display: block;
     text-align: center;
 }
@@ -453,11 +462,4 @@ footer{
 .comment-area input:hover{
     border: solid 1px #000000;
 }
-
-
-
-
-
-
-
 
